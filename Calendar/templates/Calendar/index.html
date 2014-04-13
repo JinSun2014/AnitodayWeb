@@ -1,0 +1,11 @@
+<%inherit file="base.html" />
+
+<%def name="js_defer()">
+    ${ parent.js_defer() }
+</%def>
+
+<P>This is index page.</P>
+
+% for i in range(1, 5):
+    ${ i }<br>
+% endfor
